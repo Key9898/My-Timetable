@@ -1,0 +1,96 @@
+{
+  "timeSlots": [
+    "08:00 - 11:00",
+    "11:10 - 12:30",
+    "12:30 - 13:30",
+    "13:30 - 14:30",
+    "14:40 - 17:40",
+    "17:40 - 20:00",
+    "20:00 - 21:00",
+    "21:10 - 22:10",
+    "22:10 - 23:30"
+  ],
+  "cells": {
+    "0": {
+      "0": "WordPress",
+      "1": "WordPress",
+      "2": "WordPress",
+      "3": "WordPress",
+      "4": "WordPress",
+      "5": "Social Studies & Science Revision",
+      "6": "Test"
+    },
+    "1": {
+      "0": "Math",
+      "1": "RLA",
+      "2": "Social Studies",
+      "3": "Science",
+      "4": "JavaScript Project",
+      "5": "Social Studies Test",
+      "6": "Test"
+    },
+    "2": {
+      "0": "Lunch Break",
+      "1": "Lunch Break",
+      "2": "Lunch Break",
+      "3": "Lunch Break",
+      "4": "Lunch Break",
+      "5": "Lunch Break",
+      "6": "Test"
+    },
+    "3": {
+      "0": "Math Revision",
+      "1": "RLA Revision",
+      "2": "Social Studies Revision",
+      "3": "Science Revision",
+      "4": "JavaScript Project",
+      "5": "Science Test",
+      "6": "Relax"
+    },
+    "4": {
+      "0": "WordPress",
+      "1": "WordPress",
+      "2": "WordPress",
+      "3": "WordPress",
+      "4": "WordPress",
+      "5": "Math & RLA Revision",
+      "6": "Relax"
+    },
+    "5": {
+      "0": "Dinner Break",
+      "1": "Dinner Break",
+      "2": "Dinner Break",
+      "3": "Dinner Break",
+      "4": "Dinner Break",
+      "5": "Dinner Break",
+      "6": "Relax"
+    },
+    "6": {
+      "0": "JavaScript",
+      "1": "JavaScript",
+      "2": "Meeting",
+      "3": "JavaScript",
+      "4": "Meeting",
+      "5": "Math Test",
+      "6": "Relax"
+    },
+    "7": {
+      "0": "JavaScript Revision",
+      "1": "JavaScript Revision",
+      "2": "Meeting",
+      "3": "JavaScript Revision",
+      "4": "Meeting",
+      "5": "RLA Test",
+      "6": "Relax"
+    },
+    "8": {
+      "0": "Free Time",
+      "1": "Free Time",
+      "2": "Free Time",
+      "3": "Free Time",
+      "4": "Free Time",
+      "5": "Free Time",
+      "6": "Relax"
+    }
+  }
+}
