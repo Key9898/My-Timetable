@@ -1,0 +1,110 @@
+[
+  {
+    "time": "08:00 - 11:00",
+    "activities": {
+      "Mon": "WordPress",
+      "Tue": "WordPress",
+      "Wed": "WordPress",
+      "Thu": "WordPress",
+      "Fri": "Social Studies & Science Revision",
+      "Sat": "Relax",
+      "Sun": ""
+    }
+  },
+  {
+    "time": "11:10 - 12:10",
+    "activities": {
+      "Mon": "Math",
+      "Tue": "RLA",
+      "Wed": "Social Studies",
+      "Thu": "Science Revision",
+      "Fri": "JavaScript Project",
+      "Sat": "Social Studies Test",
+      "Sun": "Relax"
+    }
+  },
+  {
+    "time": "12:10 - 13:30",
+    "activities": {
+      "Mon": "Lunch Break",
+      "Tue": "Lunch Break",
+      "Wed": "Lunch Break",
+      "Thu": "Lunch Break",
+      "Fri": "Lunch Break",
+      "Sat": "Lunch Break",
+      "Sun": "Relax"
+    }
+  },
+  {
+    "time": "13:30 - 14:30",
+    "activities": {
+      "Mon": "Math Revision",
+      "Tue": "RLA Revision",
+      "Wed": "Social Studies Revision",
+      "Thu": "Science Revision",
+      "Fri": "JavaScript Project",
+      "Sat": "Science Test",
+      "Sun": "Relax"
+    }
+  },
+  {
+    "time": "14:40 - 17:40",
+    "activities": {
+      "Mon": "WordPress",
+      "Tue": "WordPress",
+      "Wed": "WordPress",
+      "Thu": "WordPress",
+      "Fri": "WordPress",
+      "Sat": "Math & RLA Revision",
+      "Sun": "Relax"
+    }
+  },
+  {
+    "time": "17:40 - 20:00",
+    "activities": {
+      "Mon": "Dinner Break",
+      "Tue": "Dinner Break",
+      "Wed": "Dinner Break",
+      "Thu": "Dinner Break",
+      "Fri": "Dinner Break",
+      "Sat": "Dinner Break",
+      "Sun": "Relax"
+    }
+  },
+  {
+    "time": "20:00 - 21:00",
+    "activities": {
+      "Mon": "JavaScript",
+      "Tue": "JavaScript",
+      "Wed": "Meeting",
+      "Thu": "JavaScript",
+      "Fri": "Meeting",
+      "Sat": "Math Test",
+      "Sun": "Relax"
+    }
+  },
+  {
+    "time": "21:10 - 22:10",
+    "activities": {
+      "Mon": "JavaScript Revision",
+      "Tue": "JavaScript Revision",
+      "Wed": "Meeting",
+      "Thu": "JavaScript Revision",
+      "Fri": "Meeting",
+      "Sat": "RLA Test",
+      "Sun": "Relax"
+    }
+  },
+  {
+    "time": "22:10 - 23:10",
+    "activities": {
+      "Mon": "Free Time",
+      "Tue": "Free Time",
+      "Wed": "Free Time",
+      "Thu": "Free Time",
+      "Fri": "Free Time",
+      "Sat": "Free Time",
+      "Sun": "Relax"
+    }
+  }
+]
