@@ -17,7 +17,6 @@ function createTimetable() {
     ${days.map(day => `<div class="header">${day}</div>`).join('')}
   `;
 
-    // Only show time slots if they exist
     if (timeSlots.length > 0) {
         timeSlots.forEach((slot, rowIdx) => {
             const timeCell = document.createElement("div");
@@ -47,7 +46,6 @@ function createTimetable() {
             });
         });
     } else {
-        // Show empty state message
         const emptyMsg = document.createElement("div");
         emptyMsg.className = "empty-message";
         emptyMsg.textContent = "No time slots added yet. Click 'Add Time Slot' to begin.";
@@ -98,12 +96,23 @@ function removeLastTimeSlot() {
 
 function saveTimetable() {
     const cells = document.querySelectorAll(".cell");
+    const savedData = {};
+
     cells.forEach(cell => {
         const { row, col } = cell.dataset;
+        if (!savedData[row]) savedData[row] = {};
+        savedData[row][col] = cell.textContent;
         localStorage.setItem(`cell-${row}-${col}`, cell.textContent);
     });
+
     localStorage.setItem("timeSlots", JSON.stringify(timeSlots));
-    alert("Timetable saved!");
+
+    const timetableData = {
+        timeSlots: timeSlots,
+        cells: savedData
+    };
+
+    saveToGitHub(timetableData);
 }
 
 function resetTimetable() {
@@ -121,3 +130,50 @@ document.addEventListener("DOMContentLoaded", () => {
     if (savedSlots) timeSlots = JSON.parse(savedSlots);
     initTimetable();
 });
+
+
+// ✅ GitHub Save Function (Important)
+async function saveToGitHub(timetableData) {
+    const token = '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'; // ← Replace with your token
+    const repo = 'Key9898/my-timetable';     // ← Replace with your GitHub repo
+    const path = 'my-timetable/timetable.json';
+    const message = 'Update timetable';
+    const content = btoa(JSON.stringify(timetableData, null, 2)); // Base64 encode
+
+    let sha = null;
+
+    try {
+        const getRes = await fetch(`https://api.github.com/repos/${repo}/contents/${path}`, {
+            headers: {
+                Authorization: `token ${token}`,
+            },
+        });
+
+        if (getRes.ok) {
+            const file = await getRes.json();
+            sha = file.sha;
+        }
+    } catch (error) {
+        console.warn("No previous file found. Will create a new one.");
+    }
+
+    const res = await fetch(`https://api.github.com/repos/${repo}/contents/${path}`, {
+        method: 'PUT',
+        headers: {
+            Authorization: `token ${token}`,
+        },
+        body: JSON.stringify({
+            message: message,
+            content: content,
+            sha: sha || undefined,
+        }),
+    });
+
+    if (res.ok) {
+        alert('🎉 Timetable saved to GitHub!');
+    } else {
+        const error = await res.json();
+        console.error('❌ GitHub save failed:', error);
+        alert('❌ Failed to save to GitHub. See console for details.');
+    }
+}
