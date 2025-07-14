@@ -134,7 +134,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // ✅ GitHub Save Function (Important)
 async function saveToGitHub(timetableData) {
-    const token = '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'; // ← Replace with your token
+    const token = 'YOUR_SECRET_TOKEN_GOES_HERE'; // ← Replace with your token
     const repo = 'Key9898/my-timetable';     // ← Replace with your GitHub repo
     const path = 'my-timetable/timetable.json';
     const message = 'Update timetable';
